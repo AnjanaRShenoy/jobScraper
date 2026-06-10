@@ -29,7 +29,7 @@ function App() {
   const triggerManualScrape = async () => {
     setIsRefreshing(true);
     try {
-      await fetch('http://localhost:5000/api/scrape-now', { method: 'POST' });
+      await fetch('https://job-scraper-teal.vercel.app/api/scrape-now', { method: 'POST' });
       setTimeout(async () => {
         await fetchJobs();
         setIsRefreshing(false);
