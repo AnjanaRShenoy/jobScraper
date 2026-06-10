@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@sparticuz/chromium": "^147.0.0",
     "@supabase/supabase-js": "^2.108.1",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
@@ -18,6 +19,7 @@
     "mongoose": "^9.7.0",
     "node-cron": "^4.2.1",
     "puppeteer": "^24.43.1",
+    "puppeteer-core": "^24.43.1",
     "ws": "^8.21.0"
   }
 }
