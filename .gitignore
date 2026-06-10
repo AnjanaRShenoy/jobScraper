@@ -1,0 +1,12 @@
+# Block node_modules anywhere in the entire project folder structure
+**/node_modules/
+node_modules/
+
+# Block all environment files anywhere
+**/.env
+.env
+.env.local
+
+# Block OS specific metadata junk
+**/.DS_Store
+**/Thumbs.db

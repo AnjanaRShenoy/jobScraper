@@ -1,0 +1,126 @@
+body {
+  background-color: #f8fafc;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 8px 0;
+  color: #0f172a;
+}
+
+.dashboard-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.scrape-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.scrape-btn:hover { background-color: #4338ca; }
+.scrape-btn:disabled { background-color: #94a3b8; }
+
+.spinning svg {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin { 100% { transform: rotate(300deg); } }
+
+.stats-bar {
+  background-color: #f1f5f9;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  color: #334155;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.job-card-body {
+  padding: 20px;
+}
+
+.icon-wrapper {
+  color: #4f46e5;
+  margin-bottom: 12px;
+}
+
+.job-title {
+  margin: 0 0 12px 0;
+  font-size: 1.15rem;
+  color: #1e293b;
+}
+
+.job-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.job-card-footer {
+  background: #f8fafc;
+  padding: 12px 20px;
+  border-top: 1px solid #e2e8f0;
+  border-radius: 0 0 8px 8px;
+}
+
+.apply-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.apply-link:hover { text-decoration: underline; }
+.loader { text-align: center; padding: 40px; color: #64748b; }
